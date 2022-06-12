@@ -1,5 +1,5 @@
 
-public class ClassePrincipal {
+public class _Modulo01SaidasConsole {
 
     public String toString() {
         return "My test object...";
@@ -9,7 +9,7 @@ public class ClassePrincipal {
 
 //        aula: Impressão em java
 
-        System.out.println(new ClassePrincipal());
+        System.out.println(new _Modulo01SaidasConsole());
 
         System.out.print("Estudos preparatórios para Certificacação Java 8\n");
 
