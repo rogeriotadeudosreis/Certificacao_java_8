@@ -1,4 +1,6 @@
-public class Modulo01_Exercicio_5 {
+package Aula_01_Trabalhando_com_saida_console;
+
+public class Exercicio_5 {
     public static void main(String[] args) {
         System.out.println(new char[]{'a', 'b', 'c'}); // A
         System.out.println(new byte[]{'a', 'b', 'c'}); // B, new byte é uma classe e como não foi definido toString não

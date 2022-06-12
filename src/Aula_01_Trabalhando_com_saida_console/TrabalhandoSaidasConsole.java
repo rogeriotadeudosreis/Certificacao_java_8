@@ -1,5 +1,6 @@
+package Aula_01_Trabalhando_com_saida_console;
 
-public class _Modulo01SaidasConsole {
+public class TrabalhandoSaidasConsole {
 
     public String toString() {
         return "My test object...";
@@ -9,7 +10,7 @@ public class _Modulo01SaidasConsole {
 
 //        aula: Impressão em java
 
-        System.out.println(new _Modulo01SaidasConsole());
+        System.out.println(new TrabalhandoSaidasConsole());
 
         System.out.print("Estudos preparatórios para Certificacação Java 8\n");
 

@@ -1,4 +1,6 @@
-public class Modulo01_Exercicio_2 {
+package Aula_01_Trabalhando_com_saida_console;
+
+public class Exercicio_2 {
     public static void main(String[] args) {
         System.out.print("a");
         System.out.println("b");
