@@ -1,7 +1,8 @@
 package Aula_02_Classes_Wrappers;
 
 /*
-Wrappers são objetos que representar tipos primitivos
+::Wrappers:: são classes de objetos que representam tipos primitivos. Existe um
+ ::wrapper:: para cada primitivo, conforme a lista abaixo:
 
 boolean = Boolean
 byte = Byte
