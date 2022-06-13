@@ -17,7 +17,7 @@ public class AutoBoxing {
         intWrapperJ5++;
 
         i = Integer.valueOf("10", 8); // A
-        m1(i); // B esta linha não compila, pois i é long tentando converter para Integer
+//        m1(i); // B esta linha não compila, pois i é long tentando converter para Integer
     }
 
     private static void m1(Integer j) { // C
