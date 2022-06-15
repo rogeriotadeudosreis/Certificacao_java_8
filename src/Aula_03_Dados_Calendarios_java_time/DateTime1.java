@@ -19,6 +19,9 @@ public class DateTime1 {
      */
 
     public static void main(String[] args) {
+
+        // Video 01 - Manipulando datas com a biblioteca java.Time
+
         LocalTime t = LocalTime.now();
         LocalDate ld = LocalDate.now();
         LocalDateTime ldt = LocalDateTime.now();
@@ -53,6 +56,8 @@ public class DateTime1 {
 
 //        System.out.println(ldt2.get(ChronoField.DAY_OF_MONTH));
 
+        // Video 02 - métodos is
+
         MonthDay day = MonthDay.of(1,1);
         MonthDay day2 = MonthDay.of(1,2);
 
@@ -62,7 +67,7 @@ public class DateTime1 {
 //        System.out.println(day.isAfter(day2));
 
         /*
-        todos os valos de data são imutáveis, ou seja, não podem ser alterados, porém temos
+        todos os valores de data são imutáveis, ou seja, não podem ser alterados, porém temos
         uma saída
         Podemos usar métodos como o with por exemplo onde podemos alterar uma data, porém
         um detalhe importante, sempre que alteramos, na realidade vamos criar um novo
@@ -90,6 +95,20 @@ public class DateTime1 {
         Observação importante: quando fazemos conta/operações usamos o chronoUnit
         Quando precisamos pegar um campo, uamos o chronofield
          */
+
+        // Video 3 Conversão de datas
+
+        LocalDateTime ldt3 = LocalDateTime.now();
+        LocalDate ld3 = ldt3.toLocalDate(); // extrair apenas a data do datatime
+        LocalTime ld4 = ldt3.toLocalTime(); // extrair apenas o time da datatime
+
+//        podemos fazer o inverso tbm
+        LocalDateTime ldt4 = ld3.atTime(ld4);
+
+
+
+
+
 
 
     }
