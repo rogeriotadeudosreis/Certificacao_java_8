@@ -1,0 +1,62 @@
+Métodos STATIC em INTERFACES - UMA NOVIDADE NA VERSÃO JAVA 8
+
+Classes estáticas, normalmente possuem métodos estáticos, ou seja, não temos acesso ao new para instanciar um objeto.
+Todos os métodos estáticos são chamados através da própria classe.
+
+Importante:
+ - métodos STATIC só podem ser chamados pela sua própria interface, e nunca por uma classe que implementa a
+ interface.
+ - métodos STATIC sempre são públicos (modificador)
+ - métodos STATIC em interfaces não são abstract (métodos sem implementação), ou seja, todos tem uma implementação, tem
+ um corpo implementado.
+ - orientação do professor: quando precisamos de métodos STATIC para serem usados em vários classes, considere
+ implementar esses métodos dentro da própria interface, ao invés de criar classes utilitárias.
+
+ Resumo do conteúdo: Métodos STATIC em INTERFACES melhoram seu código!
+
+ - É muito comum criar métodos static para que possam ser chamados sem a necessidade criar um novo objeto.
+ - A própria JDK possui várias classes que contém somente métodos static, por exemplo: java.lang.Math, java.util.Collections,
+ java.util.Arrays, java.util.stream.Streams.
+
+ - E a JDK deixa claro que não quer que você crie instâncias dessas classes. Veja abaixo os construtores retirados
+ diretamente do código fonte da JDK:
+
+ // Suppresses default constructor, ensuring non-instantiability.
+  private Collections() {
+  }
+
+  // Suppresses default constructor, ensuring non-instantiability.
+  private Arrays() {}
+
+ /**
+  * Don't let anyone instantiate this class.
+  */
+  private Math() {}
+
+  private Streams() {
+     throw new Error("no instances");
+  }
+
+  O PROBLEMAS COM CLASSES UTILITÁRIAS
+
+  - Esse tipo de classe normalmente é chamada de utilitária, por isso a terminação *util em  muitas delas, principalmente
+  nas da Apache. Essas classes basicamente não seguem o padrão de Orientação à Objetos (OO), pois contém apenas código
+  estruturado.
+  - Aliás, se fosse possível no Java, esses métodos nem estariam dentro de uma classe.
+
+  QUANDO UTILIZAR CLASSES UTILITÁRIAS ?
+
+  - O fato de não seguir os conceitos da OO não é necessariamente algo ruim. Porém, imagine a seguinte situação:
+  - você possui uma classe Pessoa e quer fazer um método utilitário static. o que vc acha que faz sentido:
+  - criar uma classe PessoaUtil com esse método, ou criá-lo na própria classe Pessoa ? Eu advogo pela segunda opção,
+  ou seja, só vejo sentido em criar uma classe utilitária quando:
+  - Você não é o dono da classe original, ou não consegue modificá-l: ou
+  - Você possui uma estrutura de interfaces e esse mnétodo utilitário serve para todas elas. Este é o caso da classe
+  java.util.Collections.
+
+
+
+
+
+
+
