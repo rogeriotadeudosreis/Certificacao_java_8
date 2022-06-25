@@ -24,6 +24,7 @@ public class Java8InterfacesStatic {
     }
 
     class Person implements Corredor {
+
     }
 
 }
