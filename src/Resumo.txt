@@ -1,3 +1,8 @@
+
+/*
+Aqui apenas textos de estudos feitos
+*/
+
 Java 8 - Trabalhando com algumas classes da Java API
 Crie e manipule dados de calendários usando as classes java.time.LocalDateTime, java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter?, java.time.Period
 No Java 8, após uma longa história de sofrimento dos desenvolvedores com as classes java.util.Date e java.util.Calendar, foi introduzida uma nova API para manipulação de datas e horas.
