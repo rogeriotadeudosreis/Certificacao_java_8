@@ -29,7 +29,7 @@ public class DataHoraJava8 {
         LocalTime lt = LocalTime.of(23, 45, 14, 10000);
         System.out.println("Local time específico: " + lt);
 
-        // LocalDateTime - representa
+        // LocalDateTime - representaaa
         LocalDateTime ldtNow = LocalDateTime.now();
         System.out.println("LocalDateTime atual do sistema: " + ldtNow);
         LocalDateTime ldt = LocalDateTime.of(1974, 07, 25, 15, 25, 59, 25465205);
